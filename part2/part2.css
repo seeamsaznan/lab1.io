@@ -1,0 +1,110 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b6ff97;
+    color: #333;
+}
+
+header {
+    background-color: #6cff5c;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 48px;
+    color: #333;
+    margin: 0;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    background-color: #1bcf00;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #0faf00;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+section.welcome, section.photos {
+    width: 45%;
+    background-color: #9cff72;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    text-align: center;
+    color: #333;
+}
+
+.photos .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.photos img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #9cff72;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
