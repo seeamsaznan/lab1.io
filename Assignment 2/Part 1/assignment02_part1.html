@@ -11,9 +11,12 @@
             margin: 0;
             padding: 0;
         }
+        .backgroundd{
+            background-color: rgb(188, 186, 186);
+        }
 
         .container {
-            max-width: 1200px;
+            max-width: 1800px;
             margin: 0 auto;
         }
 /* Header section - styling the Mozilla logo */
@@ -28,7 +31,9 @@
         }
 
         .content {
-            text-align: center;
+            display: flex; /* Changed from text-align to flex for alignment */
+            justify-content: center;
+            align-items: flex-start;
             padding: 20px;
         }
 
@@ -45,14 +50,29 @@
         }
 
         .video-container {
-            text-align: center;
-            margin-bottom: 20px;
+            width: 40%;
         }
 
         .video-container iframe {
             width: 100%;
-            max-width: 600px;
             height: 350px;
+        }
+
+        .textt{
+            width: 45%;
+            margin-left: 20px;
+        }
+
+        .textt h1{
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: right;
+
+        }
+        .textt p{
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 20px;
         }
 
         .icon-row {
@@ -81,15 +101,26 @@
          /* Media Queries */
          @media (max-width: 768px) {
             .icon-row {
-                flex-direction: column;
+                flex-direction: row;
+                align-items: center;
             }
 
             .icon-row img {
-                margin: 10px 0;
+                width: 60px;
+                margin: 0 10px;
             }
 
             .video-container iframe {
                 height: 200px;
+            }
+
+            .content {
+                flex-direction: column; /* Stack video and text vertically on smaller screens */
+            }
+
+            .video-container, .textt {
+                width: 100%; /* Make both elements full width on smaller screens */
+                margin-left: 0;
             }
         }
     </style>
@@ -107,11 +138,13 @@
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/ojcNcvb1olg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+            <section class="backgroundd">
             <h1>Rocking the free web</h1>
-            <p>
+            <p class="textt">
                 Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.
             </p>
-            <p>Click on the images below to find more information about the cool stuff Mozilla does. Red panda picture by Mathias Appel.</p>
+            <p class="textt">Click on the images below to find more information about the cool stuff Mozilla does. Red panda picture by Mathias Appel.</p>
+        </section>
         </div>
 
         <!-- Icon Row -->
@@ -119,6 +152,7 @@
             <img src="Images/Image1.png">
             <img src="Images/image2.webp">
             <img src="Images/Image3.png">
+            <img src="Images/image4.png">
         </div>
 
         <!-- Panda Section -->
