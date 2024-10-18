@@ -1,5 +1,17 @@
 html {
     font-family: sans-serif;
-  }
-  
-  /* Your CSS below here */
+    font-size: 16px; /* Set base font size */
+}
+
+/* Your CSS below here */
+div {
+    width: 200px; /* Reasonable width for a large box */
+    height: 100px; /* Reasonable height for a large box */
+    margin: 0 auto; /* Centers the box horizontally */
+    display: flex; /* Use flexbox to center text vertically and horizontally */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    font-size: 1.125rem; /* Slight increase in font size, 18px = 1.125rem */
+
+   
+}
