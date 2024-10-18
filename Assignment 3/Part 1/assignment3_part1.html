@@ -17,7 +17,7 @@
         color: #d40087; /* Changed to pink header color */
         font-size: 2.5em; /* Increased font size */
         font-family: Georgia, "Times New Roman", Times, serif;
-        border-bottom: 4px dotted #9b59b6; /* Added purple dotted line */
+        border-bottom: 8px dotted #9b59b6; /* Added purple dotted line */
         padding-bottom: 0.3em; /* Added padding below the header */
       }
 
@@ -38,6 +38,11 @@
         font-size: 1.3em; /* Adjusted font size for h2 */
         margin-top: 2em; /* Added margin-top for spacing */
         font-weight: bold;
+        font-style: italic;
+      }
+      a.email:link,
+      a.email:visited {
+        color: rgb(38, 160, 38); /* Green color for email */
       }
 
       ul {
@@ -60,11 +65,13 @@
       }
 
       .contact-info {
-        border: 2px solid #9b59b6; /* Added purple border to the contact info */
+        border: 5.5px solid #72378a; /* Added purple border to the contact info */
         padding: 10px; /* Added padding inside the border */
         margin-top: 1em; /* Added margin-top to separate from the rest */
         font-size: 1em; /* Set font size for contact info */
+        background-color: rgb(235, 235, 235);
       }
+      
     </style>
   </head>
 
@@ -89,7 +96,7 @@
       <ul>
         <li>
           Email:
-          <a href="mailto:seeam@gmail.com">seeam@gmail.com</a>
+          <a href="mailto:seeam@gmail.com" class="email">seeam@gmail.com</a>
         </li>
         <li>
           Web:
