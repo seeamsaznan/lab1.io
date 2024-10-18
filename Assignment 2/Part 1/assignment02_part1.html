@@ -1,0 +1,176 @@
+<!--
+
+         Name: Seeam Saznan
+
+         File: assignment2_part2.html
+
+         Date: 2024-10-04
+
+         It is a responsive webpage regarding mozila firefox
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozilla - Rocking the Free Web</title>
+    <style>
+        /* General page CSS*/
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .backgroundd{
+            background-color: rgb(188, 186, 186);
+        }
+
+        .container {
+            max-width: 1800px;
+            margin: 0 auto;
+        }
+/* Header section - styling the Mozilla logo */
+        header {
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            width: 50px;
+        }
+
+        .content {
+            display: flex; /* Changed from text-align to flex for alignment */
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1rem;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        .video-container {
+            width: 40%;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 350px;
+        }
+
+        .textt{
+            width: 45%;
+            margin-left: 20px;
+        }
+
+        .textt h1{
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: right;
+
+        }
+        .textt p{
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .icon-row {
+            display: flex;
+            justify-content: center;
+            background-color: #a8362c;
+            padding: 20px;
+        }
+
+        .icon-row img {
+            width: 80px;
+            margin: 0 20px;
+        }
+
+        .panda-section {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .panda-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+         /* Media Queries */
+         @media (max-width: 768px) {
+            .icon-row {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .icon-row img {
+                width: 60px;
+                margin: 0 10px;
+            }
+
+            .video-container iframe {
+                height: 200px;
+            }
+
+            .content {
+                flex-direction: column; /* Stack video and text vertically on smaller screens */
+            }
+
+            .video-container, .textt {
+                width: 100%; /* Make both elements full width on smaller screens */
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <img src="Images/Image1.png" alt="Mozilla Logo">
+        </header>
+
+        <!-- Content Section -->
+        <div class="content">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/ojcNcvb1olg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <section class="backgroundd">
+            <h1>Rocking the free web</h1>
+            <p class="textt">
+                Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.
+            </p>
+            <p class="textt">Click on the images below to find more information about the cool stuff Mozilla does. Red panda picture by Mathias Appel.</p>
+        </section>
+        </div>
+
+        <!-- Icon Row -->
+        <div class="icon-row">
+            <img src="Images/Image1.png">
+            <img src="Images/image2.webp">
+            <img src="Images/Image3.png">
+            <img src="Images/image4.png">
+        </div>
+
+        <!-- Panda Section -->
+        <div class="panda-section">
+            <img src="Images/image5.jpg" >
+        </div>
+    </div>
+
+</body>
+</html>
