@@ -4,6 +4,10 @@ html {
 }
 
 /* Your CSS below here */
+body {
+    background-color: #f0f0f0; /* Base color for the design */
+}
+
 div {
     width: 200px; /* Reasonable width for a large box */
     height: 100px; /* Reasonable height for a large box */
@@ -12,6 +16,21 @@ div {
     justify-content: center; /* Centers text horizontally */
     align-items: center; /* Centers text vertically */
     font-size: 1.125rem; /* Slight increase in font size, 18px = 1.125rem */
+    
+    background-color: rgb(212, 7, 7); /* Set box background color to red */
+    color: #ffffff; /* Contrasting color for the text */
+    text-shadow: 1px 1px 2px black; /* Black text shadow */
+    
+    border-radius: 8px; /* Subtle border radius */
+    border: 1px solid #b30000; /* Slightly darker shade for border */
 
-   
+    /* Linear gradient background */
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 100%), red;
+
+    /* Box shadows */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2), /* Standard box shadow for raised effect */
+                inset 0px 2px 4px rgba(255, 255, 255, 0.4), /* Inset white shadow */
+                inset 0px -2px 4px rgba(0, 0, 0, 0.3); /* Inset black shadow */
+    
+ 
 }
