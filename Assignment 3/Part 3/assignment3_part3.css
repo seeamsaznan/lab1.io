@@ -45,26 +45,18 @@ header, footer {
 }
 
 /* Fonts and Text Styles */
-
-/* Font for body text (Merriweather) */
 @font-face {
     font-family: 'Merriweather';
     src: url('fonts/merriweather-regular.woff2') format('woff2'),
          url('fonts/merriweather-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 }
 
-/* Font for headings (Lato) */
 @font-face {
     font-family: 'Lato';
     src: url('fonts/lato-regular.woff2') format('woff2'),
          url('fonts/lato-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 }
 
-/* Apply fonts */
 h1, h2 {
     font-family: 'Lato', sans-serif;
     text-align: center;
@@ -76,7 +68,6 @@ p {
     word-spacing: 1px;
 }
 
-/* Headings */
 h1 {
     font-size: 2.5em;
 }
@@ -85,7 +76,78 @@ h2 {
     font-size: 1.8em;
 }
 
-/* Indent first paragraph after each heading */
 section p:first-of-type {
     text-indent: 20px;
+}
+
+/* Link styling */
+a {
+    color: #a66;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #733;
+}
+
+a:hover, a:focus {
+    color: #a66;
+    text-decoration: none;
+    outline: none;
+}
+
+a:active {
+    color: #500;
+    font-weight: bold;
+}
+
+/* External link styling */
+a[href^="http"]:after {
+    content: ' \2197';
+    font-size: 0.8em;
+    color: #a66;
+    margin-left: 5px;
+}
+
+/* List styling */
+ul, ol {
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+    line-height: 1.6;
+}
+
+li {
+    line-height: 1.6;
+    padding-left: 1.2em;
+}
+
+ul {
+    list-style-image: url('custom-bullet.png');
+}
+
+/* Navigation menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-bottom: 0.8em;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    background-color: #f7f7f7;
+    border: 2px solid #a66;
+    border-radius: 5px;
+    text-align: center;
+    color: #a66;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #a66;
+    color: white;
 }
