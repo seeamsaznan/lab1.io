@@ -1,0 +1,65 @@
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1em;
+  margin: 0;
+}
+
+h1 {
+  color: hotpink; /* Changed to pink header color */
+  font-size: 2.5em; /* Increased font size */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-bottom: 10px dotted purple; /* Added purple dotted line */
+  padding-bottom: 0.3em; /* Added padding below the header */
+}
+
+.job-title {
+  color: #999999;
+  font-weight: bold;
+  font-size: 1.2em; /* Increased font size for the job title */
+  margin-top: 0.5em; /* Added margin-top */
+  margin-bottom: 1.5em; /* Added margin-bottom */
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.6; /* Adjusted line height for better readability */
+}
+
+h2 {
+  font-size: 1.3em; /* Adjusted font size for h2 */
+  margin-top: 2em; /* Added margin-top for spacing */
+  font-weight: bold;
+  font-style: italic;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 0.5em; /* Added margin-bottom to each list item */
+}
+
+a:link,
+a:visited {
+  color: #fb6542; /* Changed link color to orange */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Added underline on hover */
+  color: green;
+}
+
+.contact-info {
+  border: 5px solid purple; /* Added purple border to the contact info */
+  padding: 10px; /* Added padding inside the border */
+  margin-top: 1em; /* Added margin-top to separate from the rest */
+  font-size: 1em; /* Set font size for contact info */
+  background-color: #eeeeee;
+}
+
