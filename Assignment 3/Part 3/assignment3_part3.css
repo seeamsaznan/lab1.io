@@ -57,6 +57,24 @@ header, footer {
          url('fonts/lato-regular.woff') format('woff');
 }
 
+
+
+h1, h2 {
+    font-family: 'American Typewriter', 'Lato', sans-serif; /* Added 'American Typewriter' */
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+    text-align: left;
+}
+
+
 h1, h2 {
     font-family: 'Lato', sans-serif;
     text-align: center;
@@ -70,10 +88,12 @@ p {
 
 h1 {
     font-size: 2.5em;
+    
 }
 
 h2 {
     font-size: 1.8em;
+    text-align: left;
 }
 
 section p:first-of-type {
@@ -90,7 +110,7 @@ a:visited {
     color: #733;
 }
 
-a:hover, a:focus {
+a:hover, a:focus { 
     color: #a66;
     text-decoration: none;
     outline: none;
@@ -151,3 +171,13 @@ nav ul li a:hover {
     background-color: #a66;
     color: white;
 }
+
+.inline-image {
+    width: 10px;  /* Adjust the size of the image to match your design */
+    height: 10px;
+    vertical-align: middle;  /* Align the icon with the middle of the text */
+    margin-left: 5px;  /* Add some space between the text and the image */
+    margin-right: 0;  /* Make sure no extra space appears after the image */
+}
+
+
