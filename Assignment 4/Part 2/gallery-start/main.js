@@ -31,5 +31,8 @@ imageFilenames.forEach((filename) => {
 
 // Button to toggle the darken effect
 btn.addEventListener('click', () => {
-  overlay.style.backgroundColor = overlay.style.backgroundColor === 'rgba(0,0,0,0.7)' ? 'rgba(0,0,0,0)' : 'rgba(0,0,0,0.7)';
+  // Toggle the darken effect on the full-size image
+  overlay.style.backgroundColor = overlay.style.backgroundColor === 'rgba(0,0,0,0.7)' 
+    ? 'rgba(0,0,0,0)' 
+    : 'rgba(0,0,0,0.7)';
 });
