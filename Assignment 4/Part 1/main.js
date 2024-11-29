@@ -15,11 +15,7 @@ const storyText =
 
 // Store the first set of strings in an array
 const insertX = ['Willy the Goblin', 'Big Daddy', 'Father Christmas'];
-
-// Store the second set of strings in an array
 const insertY = ['the soup kitchen', 'Disneyland', 'the White House'];
-
-// Store the third set of strings in an array
 const insertZ = [
   'spontaneously combusted',
   'melted into a puddle on the sidewalk',
@@ -31,32 +27,36 @@ randomize.addEventListener('click', result);
 
 // Function to generate the story
 function result() {
+  // Create a new story from the template
   let newStory = storyText;
 
-  // Randomly replace placeholders with values
+  // Generate random values for placeholders
   const xItem = randomValueFromArray(insertX);
   const yItem = randomValueFromArray(insertY);
   const zItem = randomValueFromArray(insertZ);
 
+  // Replace placeholders in the story template
   newStory = newStory.replaceAll(':insertx:', xItem);
   newStory = newStory.replace(':inserty:', yItem);
   newStory = newStory.replace(':insertz:', zItem);
 
-  // Check for custom name
+  // Replace "Bob" with the custom name if provided
   if (customName.value !== '') {
     const name = customName.value;
     newStory = newStory.replace('Bob', name);
   }
 
-  // Adjust for UK settings
+  // Convert units if UK is selected
   if (document.getElementById('uk').checked) {
     const weight = Math.round(300 * 0.071429) + ' stone'; // Convert pounds to stones
     const temperature = Math.round((94 - 32) * (5 / 9)) + ' centigrade'; // Convert Fahrenheit to Celsius
+
+    // Replace temperature and weight in the story
     newStory = newStory.replace('94 fahrenheit', temperature);
     newStory = newStory.replace('300 pounds', weight);
   }
 
-  // Display the story
+  // Update the story text and make it visible
   story.textContent = newStory;
   story.style.visibility = 'visible';
 }
