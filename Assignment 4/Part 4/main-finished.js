@@ -182,7 +182,27 @@ while (balls.length < 25) {
 const evilBall = new EvilCircle(random(0, width), random(0, height));
 
 // Main loop to animate the canvas
+function loop() {
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.25)'; // Set background color with transparency
+  ctx.fillRect(0, 0, width, height); // Fill the canvas with the background color
 
+  // Loop through all balls and update their position, draw, and check collisions
+  for (const ball of balls) {
+    if (ball.exists) {
+      ball.draw();
+      ball.update();
+      ball.collisionDetect();
+    }
+  }
+
+  // Draw and update the EvilCircle
+  evilBall.draw();
+  evilBall.checkBounds();
+  evilBall.collisionDetect();
+
+  // Request the next frame of animation
+  requestAnimationFrame(loop);
+}
 
 // Start the animation loop
 loop();
