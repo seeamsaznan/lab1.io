@@ -1,4 +1,15 @@
+<!--
 
+         Name: Seeam Saznan
+
+         File: index.html
+
+         Date: 4th December 2024
+
+         A very brief description of the file.
+         Accesibily trouble shooting
+
+-->
 
 <html>
   <head>
@@ -7,19 +18,9 @@
     <title>Accessibility assessment</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
-    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+
   </head>
 
-  <!-- Problems with voiceovers
-  - It doesn't read out how many items are in navigation menu and list of links.
-  - There is no indication about table header. 
-  - There is no alt text of images. 
-  - It sometimes repeats the same sentences.
-  - Users can’t jump between headings because of the (originally) missing <h*> tags.
-  -->
 
   <body>
     <header>
@@ -32,9 +33,7 @@
       </button>
 
       <ul role="menu" id="nav-menu">
-        <!-- I added tabindex="0" role="menuitem" to <li> tag
-        because on FF <li> were not keyboard accessible.
-        But on Michael"s FF, they are already keyboard accessible without them.-->
+      
         <li><a href="#" >Home</a></li>
         <li><a href="#">Our team</a></li>
         <li><a href="#">Projects</a></li>
@@ -93,18 +92,14 @@
         <picture>
           <source media="(max-width: 615px)"
                   srcset="https://cdn.glitch.global/3e194d20-b2e0-4b08-8efa-dccfa5698a7b/wild-bear-250.jpg?v=1665376575900">
-          <!--<source media="(min-width: 616px)"
-    srcset="https://cdn.glitch.global/3e194d20-b2e0-4b08-8efa-dccfa5698a7b/wild-bear.jpg?v=1665376579987">
-This was unneccessary because the browser will automatically use the fallback URL of <img>. -->
+          
           <img src="https://cdn.glitch.global/3e194d20-b2e0-4b08-8efa-dccfa5698a7b/wild-bear.jpg?v=1665376579987" alt="a brown bear in a river">
         </picture>
         <p>Urban (gentrified) bears on the other hand have largely abandoned the old ways. They will hunt other urban creatures if necessary (including other predators like rats and foxes), but prefer to scavenge from readily available urban food outlets like dumpsters, bins, and fast food joints. When food has proven scarce, urban bears have even been known to break into people's kitchens and steal essentials like baked beans, ready meals, and microwave ovens.</p>
         <picture>
           <source media="(max-width: 615px)"
                   srcset="https://cdn.glitch.global/3e194d20-b2e0-4b08-8efa-dccfa5698a7b/urban-bear-250.jpg?v=1665376569670">
-          <!--<source media="(min-width: 616px)"
-                  srcset="https://cdn.glitch.global/3e194d20-b2e0-4b08-8efa-dccfa5698a7b/urban-bear.jpg?v=1665376573089">
-This was unneccessary because the browser will automatically use the fallback URL of <img>. -->
+          
           <img src="https://cdn.glitch.global/3e194d20-b2e0-4b08-8efa-dccfa5698a7b/urban-bear.jpg?v=1665376573089" alt="a bear in a cage">
         </picture>
         <p>Urban bears will sleep anywhere they can, from bus shelters and parks, to the toilets in McDonalds, to their own apartment.</p>
@@ -176,9 +171,7 @@ This was unneccessary because the browser will automatically use the fallback UR
         <h2>Related</h2>
 
         <ul>
-        <!-- I added tabindex="0" to <li> tag
-        because on FF <li> were not keyboard accessible.
-        But on Michael"s FF, they are already keyboard accessible without them.-->
+       
           <li><a href="#">The trouble with Bees</a></li>
           <li><a href="#">The trouble with Otters</a></li>
           <li><a href="#">The trouble with Penguins</a></li>

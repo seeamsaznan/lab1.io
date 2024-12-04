@@ -1,4 +1,4 @@
-/* || General setup */
+
 
 html, body {
   margin: 0;
@@ -16,7 +16,7 @@ body {
   margin: 0 auto;
 }
 
-/* || typography */
+
 
 h1, h2, h3 {
   font-family: 'Sonsie One', cursive;
@@ -52,7 +52,7 @@ p, li, table, .transcript {
 
 /* || header layout */
 
-/* The original contrast was 4.09 with green background.*/
+
 nav, article, footer, .secondary {
   background-color: white;
 }
@@ -63,17 +63,16 @@ article, footer, .secondary {
 
 article {
   margin-right: 10px;
-  /* added */
+
   min-width: 560px;
 }
 
 nav {
   height: 50px;
-  /*background-color: ff80ff;*/
+  
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
-  /*added */
   justify-content: space-around;
 }
 
@@ -88,7 +87,6 @@ nav li {
   display: inline;
   text-align: center;
   flex: 1;
-  /*added*/
   min-width:154px;  
 }
 
@@ -106,7 +104,6 @@ nav .search {
   align-items: center;
   height: 100%;
   padding: 0 2em;
-  /*added*/
   min-width: 368px; 
   max-width: 408px;
 }
@@ -128,7 +125,7 @@ nav .search {
   color: white;
 }
 
-/* || main layout */
+
 
 main {
   display: flex;
@@ -146,7 +143,6 @@ footer {
   margin-top: 10px;
 }
 
-/* Table styling */
 
 table {
   width: 100%;
@@ -170,8 +166,6 @@ tbody tr:nth-child(odd) {
   background-color: #ddeeff;
 }
 
-/* styling content images and audio */
-
 img, audio {
   display: block;
   margin: 0 auto;
@@ -180,8 +174,6 @@ img, audio {
 audio {
   width: 500px;
 }
-
-/* Comments styling */
 
 .comments {
   background-color: #ddeeff;
@@ -260,7 +252,6 @@ audio {
   flex: 5;
 }
 
-/* Transcript control */
 audio {
   margin: 0;
 }
@@ -273,8 +264,6 @@ audio {
   margin-left: 5px;
   display: none;
 }
-
-/* responsive design */
 
 .hamIcon {
   width: 36px;

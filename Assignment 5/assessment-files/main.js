@@ -1,6 +1,6 @@
 
 
-// functionality for showing/hiding the comments section
+
 
 const showHideBtn = document.querySelector('.show-hide');
 const commentWrapper = document.querySelector('.comment-wrapper');
@@ -18,14 +18,13 @@ showHideBtn.onclick = function() {
   }
 };
 
-/* added */
+
 showHideBtn.onkeydown = (e) => {
   if (e.key === "Enter") {
     showHideBtn.click();
   }
 }
 
-// functionality for adding a new comment via the comments form
 
 const form = document.querySelector('.comment-form');
 const nameField = document.querySelector('#name');
@@ -55,7 +54,6 @@ function submitComment() {
   commentField.value = '';
 }
 
-// audio transcript
 const transcript = document.querySelector('.transcript');
 const transcriptBtn = document.querySelector('.transcript-button');
 const transcriptCon = document.querySelector('.transcript-container')
@@ -70,7 +68,7 @@ transcriptBtn.onclick = () => {
   }
 }
 
-// hamburger menu
+
 const nav = document.querySelector("nav")
 const hamIcon = document.querySelector(".hamIcon")
 const navMenu = document.querySelector("nav ul")
@@ -86,11 +84,4 @@ hamIcon.onclick = () => {
   }
 }
 
-/* How can I hide navMenu when any of the link is pressed?
-failed attempt:
-nav.addEventListener("focusout", ()=> {
-  navMenu.style.visibility = "hidden";
-  navMenu.className = "hidden";
-})
-*/
 
