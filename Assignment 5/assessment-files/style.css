@@ -65,7 +65,7 @@ article {
 
 div[class="nav"] {
   height: 50px;
-  background-color: ff80ff;
+  background-color: #c54ec5; /* Updated to darker pink for better contrast */
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
@@ -173,7 +173,7 @@ audio {
 /* Comments styling */
 
 .comments {
-  background-color: #def;
+  background-color: #b0d4d4; /* Updated to darker cyan for better contrast */
   padding: 10px;
 }
 
